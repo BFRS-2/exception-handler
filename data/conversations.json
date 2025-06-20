@@ -1,0 +1,23 @@
+[
+  {
+    "shipment_id": "12345",
+    "conversation": [
+      {"role": "seller", "content": "The address seems wrong."},
+      {"role": "agent", "content": "Please confirm the correct street name."}
+    ]
+  },
+  {
+    "shipment_id": "12346",
+    "conversation": [
+      {"role": "agent", "content": "Delivery attempt failed."},
+      {"role": "seller", "content": "Can you try again tomorrow?"}
+    ]
+  },
+  {
+    "shipment_id": "12347",
+    "conversation": [
+      {"role": "seller", "content": "Apartment number missing."},
+      {"role": "agent", "content": "Please provide the full address."}
+    ]
+  }
+] 

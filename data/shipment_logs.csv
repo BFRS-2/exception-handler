@@ -1,0 +1,4 @@
+shipment_id,exception_type,details
+12345,address_issue,Invalid street name
+12346,delivery_failed,Customer not available
+12347,address_issue,Missing apartment number 
