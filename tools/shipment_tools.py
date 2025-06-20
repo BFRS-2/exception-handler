@@ -15,11 +15,16 @@ def recommend_action(exception_type, context):
         return "Escalate to human agent."
 
 def get_exception_details(shipment_id):
+    try:
+        shipment_id_int = int(str(shipment_id).strip())
+    except ValueError:
+        # Return None or a custom error message for invalid input
+        return None, "Invalid shipment ID. Please enter a numeric shipment ID."
     df = pd.read_csv("data/shipment_logs.csv")
-    row = df[df["shipment_id"] == int(shipment_id)]
+    row = df[df["shipment_id"] == shipment_id_int]
     if not row.empty:
         exception_type = row.iloc[0]["exception_type"]
-        details = row.iloc[0]["details"]
+        details = row.iloc[0]["exception_description"]
         return exception_type, details
     return None, None
 
