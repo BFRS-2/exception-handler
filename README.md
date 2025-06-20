@@ -74,37 +74,32 @@ sequenceDiagram
 
 ---
 
-## 🏗️ System Architecture
-
-Here's a high-level view of the architecture and how each component interacts:
-
-```mermaid
 flowchart TD
     subgraph UI
-        A[Seller]
-        B[Streamlit Web App]
+        A[👤 Seller]
+        B[🖥️ Streamlit Web App]
     end
     subgraph Data
-        C[Shipment Logs/Conversations]
-        H[Feedback Storage]
+        C[📄 Shipment Logs & Conversations]
+        H[📝 Feedback Store]
     end
     subgraph Intelligence
-        D[Exception Agent (LangChain)]
-        E[Shipment Tools]
-        F[ChromaDB (Vector Store)]
-        G[OpenAI LLM]
+        D[🤖 Exception Agent]
+        E[🛠️ Shipment Tools]
+        F[🗂️ ChromaDB (Vector Store)]
+        G[🧠 OpenAI LLM]
     end
 
-    A-->|Chat|B
-    B-->|Reads/Writes|C
-    B-->|Feedback|H
-    B-->|Exception Handling|D
-    D-->|Lookup|E
-    D-->|Similar Cases|F
-    D-->|LLM Query|G
-    F-.->|Vector Search|D
-    H-.->|Feedback|B
-```
+    A --> B
+    B --> C
+    B --> H
+    B --> D
+    D --> E
+    D --> F
+    D --> G
+    F -.-> D
+    H -.-> B
+
 
 ---
 
