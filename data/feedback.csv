@@ -1,0 +1,102 @@
+issue_description,shipment_id,prompt,response,feedback
+"12347","12347","You are a shipment support assistant for a chatbot. Given the following context, your job is to:
+1. Identify the exact exception and its details for the shipment.
+2. Use the conversation history to understand what has already been tried or discussed.
+3. Provide a clear, step-by-step resolution for the user that addresses the exception directly, using all available information.
+4. Never suggest escalation to a human agent. Always provide a concrete, actionable resolution, even if you have to make reasonable assumptions.
+
+Exception type: address_issue
+Exception details: Missing apartment number 
+Conversation history:
+Seller: Apartment number missing.
+Agent: Please provide the full address.
+User issue description: 12347
+
+Your response should:
+- Clearly state the identified exception and details.
+- Reference any relevant points from the conversation history.
+- Give specific, actionable steps for the user to resolve the issue.
+","
+Exception: Missing apartment number
+Details: The user has not provided an apartment number in their address.
+
+Conversation history:
+Seller: Apartment number missing.
+Agent: Please provide the full address.
+User issue description: 12347
+
+Resolution:
+1. The exception is that the user has not provided an apartment number in their address.
+2. The seller has already mentioned that the apartment number is missing.
+3. The agent has requested the user to provide the full address.
+4. To resolve this issue, please provide the full address including the apartment number.
+5. If you do not have an apartment number, you can leave that field blank or enter "N/A" to indicate that there is no apartment number.
+6. This will ensure that your shipment is delivered to the correct address without any delays or issues.
+7. Please provide the complete address as soon as possible to avoid any further complications.
+8. Thank you for using our chatbot for shipment support. We hope this resolves your issue.","yes"
+"item not delivered yet","12347","You are a shipment support assistant for a chatbot. Given the following context, your job is to:
+1. Identify the exact exception and its details for the shipment.
+2. Use the conversation history to understand what has already been tried or discussed.
+3. Provide a clear, step-by-step resolution for the user that addresses the exception directly, using all available information.
+4. Never suggest escalation to a human agent. Always provide a concrete, actionable resolution, even if you have to make reasonable assumptions.
+
+Exception type: address_issue
+Exception details: Missing apartment number 
+Conversation history:
+Seller: Apartment number missing.
+Agent: Please provide the full address.
+User issue description: item not delivered yet
+
+Your response should:
+- Clearly state the identified exception and details.
+- Reference any relevant points from the conversation history.
+- Give specific, actionable steps for the user to resolve the issue.
+","
+Exception: address_issue - Missing apartment number
+
+Conversation history:
+Seller: Apartment number missing.
+Agent: Please provide the full address.
+User issue description: item not delivered yet
+
+Resolution:
+Hello, I understand that you have not received your shipment yet and the seller has informed you that the apartment number is missing from the address. I apologize for the inconvenience this has caused.
+
+To resolve this issue, please provide the full address including the apartment number to the seller. This will ensure that the shipment is delivered to the correct location. If you do not have the apartment number, you can contact the seller and ask for it.
+
+If you are unable to reach the seller or do not have the apartment number, you can also try contacting the shipping company and provide them with the tracking number for your shipment. They may be able to assist you in updating the address.
+
+I hope this helps resolve the issue and you receive your shipment soon. Thank you for using our chatbot for shipment support. Have a great day!","yes"
+"item not delivered","12347","You are a shipment support assistant for a chatbot. Given the following context, your job is to:
+1. Identify the exact exception and its details for the shipment.
+2. Use the conversation history to understand what has already been tried or discussed.
+3. Provide a clear, step-by-step resolution for the user that addresses the exception directly, using all available information.
+4. Never suggest escalation to a human agent. Always provide a concrete, actionable resolution, even if you have to make reasonable assumptions.
+
+Exception type: address_issue
+Exception details: Missing apartment number 
+Conversation history:
+Seller: Apartment number missing.
+Agent: Please provide the full address.
+User issue description: item not delivered
+
+Your response should:
+- Clearly state the identified exception and details.
+- Reference any relevant points from the conversation history.
+- Give specific, actionable steps for the user to resolve the issue.
+","
+Exception: address_issue - Missing apartment number
+
+Conversation history:
+Seller: Apartment number missing.
+Agent: Please provide the full address.
+User issue description: item not delivered
+
+Resolution:
+Hello, I understand that you are facing an issue with your shipment not being delivered. Upon reviewing the conversation history, I see that the seller has mentioned that the apartment number is missing from the address. This is the reason for the delay in delivery.
+
+To resolve this issue, please provide the full address including the apartment number to the seller. This will ensure that the shipment is delivered to the correct address and you receive your item as soon as possible.
+
+If you are unsure of the apartment number, you can contact the seller and ask for it. Once you have provided the complete address, the seller can update it in the shipment details and your item will be delivered to the correct address.
+
+I hope this helps resolve the issue. Thank you for using our chatbot. Have a great day!","no: Can provide better resolution"
