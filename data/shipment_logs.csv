@@ -1,4 +1,51 @@
-shipment_id,exception_type,details
-12345,address_issue,Invalid street name
-12346,delivery_failed,Customer not available
-12347,address_issue,Missing apartment number 
+shipment_id,shipment_status,exception_type,exception_description,timestamp
+1,delivered,address_issue,"Incorrect address provided by customer",2023-01-15 10:00:00
+2,in_transit,delivery_failed,"Delivery attempt failed due to no one at home",2023-01-16 14:30:00
+3,delivered,package_damaged,"Package was damaged during transit",2023-01-17 09:15:00
+4,returned,customer_request,"Customer requested return of the item",2023-01-18 11:45:00
+5,in_transit,customs_delay,"Shipment delayed due to customs clearance",2023-01-19 08:20:00
+6,delivered,missing_item,"Item missing from the shipment",2023-01-20 16:00:00
+7,in_transit,weather_delay,"Delivery delayed due to severe weather conditions",2023-01-21 12:10:00
+8,delivered,wrong_item,"Wrong item delivered to the customer",2023-01-22 15:30:00
+9,returned,damaged_item,"Customer returned item due to damage",2023-01-23 13:25:00
+10,in_transit,delivery_attempt_failed,"Delivery attempt failed, customer unavailable",2023-01-24 17:40:00
+11,delivered,late_delivery,"Package delivered later than expected",2023-01-25 10:05:00
+12,in_transit,shipping_error,"Shipping label was incorrect",2023-01-26 09:50:00
+13,delivered,customer_complaint,"Customer complained about the delivery service",2023-01-27 14:15:00
+14,returned,incorrect_item,"Customer returned item due to receiving the wrong product",2023-01-28 11:30:00
+15,in_transit,delivery_rescheduled,"Delivery rescheduled due to customer request",2023  -01-29 08:45:00
+16,delivered,package_not_found,"Package marked as delivered but not found by customer",2023-01-30 16:20:00
+17,in_transit,customs_hold,"Shipment held at customs for inspection",2023-01-31 12:55:00
+18,delivered,partial_delivery,"Only part of the order was delivered",2023-02-01 10:35:00
+19,returned,customer_refused_delivery,"Customer refused to accept the delivery",2023-02-02 09:05:00
+20,in_transit,delivery_address_issue,"Delivery address was incorrect",2023-02-03 14:25:00
+21,delivered,shipment_split,"Order split into multiple shipments",2023-02-04 11:15:00
+22,in_transit,lost_package,"Package lost in transit",2023-02-05 08:50:00
+23,delivered,customer_satisfaction_issue,"Customer expressed dissatisfaction with the delivery",2023-02-06 16:30:00
+24,in_transit,delivery_time_change,"Delivery time changed due to unforeseen circumstances",2023-02-07 12:05:00
+25,delivered,shipment_cancellation,"Customer cancelled the shipment",2023-02-08 10:15:00
+26,in_transit,delivery_retried,"Delivery retried after initial failure",2023-02-09 09:40:00
+27,delivered,shipment_received,"Shipment received by customer successfully",2023-02-10 14:50:00
+28,in_transit,delivery_issue,"Issue with the delivery process",2023-02-11 11:20:00
+29,delivered,customer_feedback,"Customer provided feedback on the delivery experience",2023-02-12 10:00:00
+30,in_transit,shipment_tracking_error,"Error in shipment tracking information",2023-02-13 15:30:00
+31,delivered,delivery_confirmation,"Delivery confirmed by customer",2023-02-14 13:45:00
+32,in_transit,shipment_reassignment,"Shipment reassigned to a different carrier",2023-02-15 09:10:00
+33,delivered,customer_acknowledgment,"Customer acknowledged receipt of the shipment",2023-02-16 11:55:00
+34,in_transit,delivery_scheduled,"Delivery scheduled for a future date",2023-02-17 08:30:00
+35,delivered,shipment_success,"Shipment delivered successfully without issues",2023-02-18 10:20
+36,in_transit,delivery_attempt,"Delivery attempt made",2023-02-19 14:00:00
+37,delivered,customer_appreciation,"Customer expressed appreciation for the delivery service",2023-02-20 12:40:00
+38,in_transit,shipment_update,"Shipment status updated",2023-02-21 09:25:00
+39,delivered,delivery_satisfaction,"Customer satisfied with the delivery",2023-02-22 11:10:00
+40,in_transit,shipment_issue,"Issue reported with the shipment",2023-02-23 08:55:00
+41,delivered,customer_follow_up,"Customer followed up on the delivery status",2023-02-24 10:45:00
+42,in_transit,delivery_confirmation,"Delivery confirmed by customer",2023-02-25 09:30:00
+43,delivered,shipment_received_confirmation,"Customer confirmed receipt of the shipment",2023-02-26 14:20:00
+44,in_transit,delivery_rescheduled,"Delivery rescheduled due to customer request",2023-02-27 11:05:00
+45,delivered,shipment_returned,"Shipment returned to sender",2023-02-28 08:40:00
+46,in_transit,delivery_issue_reported,"Issue reported with the delivery process",2023-03-01 10:30:00
+47,delivered,customer_satisfaction,"Customer satisfied with the delivery service",2023-03-02 12:15:00
+48,in_transit,shipment_tracking_update,"Shipment tracking information updated",2023-03-03 09:00:00
+49,delivered,delivery_success,"Delivery completed successfully",2023-03-04 14:05:00
+50,in_transit,delivery_attempt_failed,"Delivery attempt failed, customer unavailable",2023-03-05 11:50:00
