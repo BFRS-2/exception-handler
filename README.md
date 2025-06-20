@@ -80,19 +80,19 @@ Here's a high-level view of the architecture and how each component interacts:
 
 ```mermaid
 flowchart TD
-    subgraph UI["User Interface"]
-        A[👤 Seller]
-        B[🖥️ Streamlit Web App]
+    subgraph UI
+        A[Seller]
+        B[Streamlit Web App]
     end
-    subgraph Data["Data Layer"]
-        C[📦 Shipment Logs/Conversations]
-        H[📝 Feedback Storage]
+    subgraph Data
+        C[Shipment Logs/Conversations]
+        H[Feedback Storage]
     end
-    subgraph Intelligence["AI & Logic"]
-        D[🤖 Exception Agent (LangChain)]
-        E[🛠️ Shipment Tools]
-        F[🗂️ ChromaDB (Vector Store)]
-        G[🧠 OpenAI LLM]
+    subgraph Intelligence
+        D[Exception Agent (LangChain)]
+        E[Shipment Tools]
+        F[ChromaDB (Vector Store)]
+        G[OpenAI LLM]
     end
 
     A-->|Chat|B
@@ -104,15 +104,6 @@ flowchart TD
     D-->|LLM Query|G
     F-.->|Vector Search|D
     H-.->|Feedback|B
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#ffd,stroke:#333,stroke-width:2px
-    style D fill:#bfb,stroke:#333,stroke-width:2px
-    style E fill:#fff,stroke:#333,stroke-width:2px
-    style F fill:#eef,stroke:#333,stroke-width:2px
-    style G fill:#ffe,stroke:#333,stroke-width:2px
-    style H fill:#eee,stroke:#333,stroke-width:2px
 ```
 
 ---
